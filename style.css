@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(15 12 25);
+    font-family: "Poppins", sans-serif;
+    color: white;
+    height: 100%;
+}
+
+nav {
+    background-color: rgb(11, 5, 21);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    background: rgb(240, 240, 26);
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    width: 15%;
+}
+
+nav img {
+    margin: 0px 74px;
+    height: 90px;
+    border-radius: 25px;
+}
+
+
+.firstSection {
+    margin: 205px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.rightSection img {
+    width: 80%;
+    height: 247px;
+    margin: 30px 50px;
+}
+
+.purple {
+    color: rgb(245, 245, 56);
+}
+
+#element {
+    color: rgb(240, 240, 26);
+}
+
+
+/* -------------About------------- */
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 70px 0;
+    /* height: 80vh; */
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 80%;
+    height: 50vh;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 50px;
+}
+
+.about {
+    font-size: 19px;
+}
+
+.tab-title {
+    display: flex;
+    margin: 20px 0 5px;
+}
+
+.tab-links {
+
+    color: blueviolet;
+    cursor: pointer;
+    margin: 0 10px;
+    right: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    position: absolute;
+    background: rgb(240, 240, 26);
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.tab-contents ul li span {
+    color: rgb(230, 240, 139);
+    font-size: 14px;
+}
+
+.tab-contents ul li span.span-name {
+    color: rgb(255, 85, 0);
+}
+
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+#services {
+    padding: 30px 100px;
+
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 80px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    font-size: 13px;
+    padding: 40px;
+    background: rgb(63, 1, 63);
+    font-weight: 300;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.services-list div a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 1px solid;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: rgb(238, 238, 48);
+    transform: translateX(20px);
+}
+
+
+/* --------------------Contact-------------------- */
+
+#Contact {
+    padding: 50px 100px;
+    background: rgb(50, 50, 50);
+    border-radius: 5px;
+}
+
+
+.contact-right {
+    flex-basis: 65%;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-left p {
+    margin: 20px 0;
+}
+
+.contact-left p i {
+    font-size: 20px;
+    color: rgb(238, 238, 68);
+    margin-right: 10px;
+}
+
+.socila-icon {
+    margin-top: 30px;
+}
+
+.socila-icon a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    color: white;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.socila-icon a:hover {
+    color: blueviolet;
+    transform: translateY(-10px);
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    border: 2px solid gray;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: blueviolet;
+    transform: translateY(5px);
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(98, 75, 1);
+    color: rgb(252, 250, 250);
+    padding: 20px;
+    margin: 15px 0;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+form .btn2 {
+    position: absolute;
+    background: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+form .btn2:hover {
+    background: blueviolet;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background-color: rgb(137, 137, 6);
+}
+
+/* ----------------- use mediaquery ---------------------- */
+nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .leftSection {
+        font-size: 30px;
+        flex-basis: 65%;
+        width: 100%;
+
+    }
+    .rightSection{
+        flex-basis: 30%;
+ 
+
+    }
+
+    .rightSection img {
+        width: 110px;
+        height: 27vh
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background-color: rgb(50, 50, 41);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 110vh;
+        padding-top: 30%;
+        z-index: 2;
+        transition: 0.8s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .right {
+        width: 20%;
+    }
+    nav img {
+        margin: 0 20px;
+        height: 90px;
+        border-radius: 25px;
+    }
+    .sub-title{
+        font-size: 30px;
+        padding: 0 15px;
+    }
+
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1  {
+        margin-bottom: 35px;
+        padding-left: 15%;
+    }
+    .about-col-1 img {
+        width: 100%;
+    }
+
+    .about p{
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+    }
+
+
+    .about{
+        padding: 14px;
+
+    }
+
+    .tab-links {
+        left: 25%;
+        color: blueviolet;
+        position: relative;
+    }
+
+    .tab-contents{
+        padding: 0 15px;
+    }
+    .row{
+        padding: 0;
+    }
+    .sub-title {
+        font-size: 24px;
+    }
+    .services-list {
+        grid-gap: 40px;
+        margin-top: 20px;
+    }
+    .services-list div {
+        width: 250px;
+    }
+    #services {
+        padding: 23px 50px;
+    }
+
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+    #Contact {
+        padding: 23px 63px;
+        background:none;
+
+    }
+    input, form textarea {
+        width: 90%;
+        border: 0;
+        outline: none;
+        background: rgb(98, 75, 1);
+        color: rgb(252, 250, 250);
+        padding: 15px;
+        margin: 6px 0;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+    form .btn2 {
+        position: absolute;
+        background: none;
+        font-size: 14px;
+        margin: 0px 0px;
+        cursor: pointer;
+    }
+    form input, form textarea {
+        width: 91%;
+        padding: 13px;
+        margin: 10px 5px;
+        font-size: 13px;
+        border-radius: 20px;
+    }
+
+    .contact-left {
+        height: 50vh;
+
+    }
+    .contact-left{
+        font-size:13px ;
+    }
+    .contact-left p i{
+        font-size: 20px;
+    }
+    .contact-left i{
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+    .contact-right {
+        height: 50vh;
+    }
+
+    .btn{
+        font-size: 12px;
+    }
+    .sub-title {
+        font-size: 30px;
+    }
+    .socila-icon {
+        margin-top   : 0px;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+
+ 
+}

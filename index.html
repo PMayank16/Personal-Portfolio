@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45eafac45e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left"><img src="image/logo.png" alt="logo"></div>
+            <div class="right">
+                <ul id="sidemenue">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Portfoli</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenue()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenue()"></i>
+            </div>
+        </nav>
+    </header>
+
+
+        <div class="firstSection">
+            <div class="leftSection">Hii, I am <span class="purple">Mayank</span>
+                <div>And I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection"><img src="image/developer.png" alt="developer"></div>
+        </div>
+
+
+        <!-- ---------------About Section--------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image/about.png" alt="About-image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <div class="about">
+                            <p>Hi there! My name is <span class="purple"><b>Mayank Pathak</b></span>, and I am a graduate of BCA
+                                from United University,Prayagraj. With a solid foundation in Computer Application <br>
+                                and a passion for web development, I embarked on a journey to <br> hone  my skills and
+                                contribute to the digital landscape.</p>
+
+                        </div>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web development</span> <br>
+                                    <span class="span-name">JavaScript</span>
+                                    <br>
+                                      Experienced in building interactive web features and functionality
+                                    <br>
+                                    <span class="span-name">NODEJS</span>
+                                    <br> 
+                                    Knowledgeable in server-side JavaScript development 
+                                    <br>
+                                    <span class="span-name">MongoDB</span>
+                                    <br>
+                                    Proficient in database management and integration.</li>
+                                <li><span>UI/UX</span><br>Designing Web App Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Graduate</span><br>United University, Prayagraj<br>2021-2024</li>
+                                <li><span>Intermediate</span><br>Kishan Inter College, Varanasi<br>2020-2021</li>
+                                <li><span>High School</span><br>Balwanti Devi Inter College, Varanasi<br>2018-2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- ------------------------------Services-------------------------------------------- -->
+       
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title ">My Services</h1>
+            </div>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-node-js"></i>
+                    <h2>Node JS</h2>
+                    <p>Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to execute JavaScript code outside of a web browser. </p>
+                    <a href="https://nodejs.org/en/about">Learn More </a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-database"></i>
+                     <h2>MongoDB</h2>
+                    <p>MongoDB is a NoSQL database that uses a flexible, document-oriented model. It stores data in JSON-like documents, making it easy to work with for developers.  </p>
+                    <a href="https://www.mongodb.com/company/what-is-mongodb">Learn More </a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>JavaScript</h2>
+                    <p> JavaScript is a versatile programming language primarily used for web development. It enables dynamic content, interactivity, and responsiveness in web pages. </p>
+                    <a href="https://www.w3schools.com/js/">Learn More </a>
+                </div>
+            </div>
+        </div>
+
+<!-- ------------------------------Contact-------------------------------------------- -->
+
+ <div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>pathakmayank444@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 7607890127</p>
+                <div class="socila-icon">
+                   <a href="https://github.com/PMayank16?tab=repositories"><i class="fa-brands fa-github"></i></a> 
+                    <a href="https://www.linkedin.com/in/mayank-pathak-01525421b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="image/MayankCV.pdf" download  class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    Copyright <i class="fa-regular fa-copyright"></i> 2024 Mayank Pathak. All right reserved.
+</div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', '&amp;Web Designer'],
+            typeSpeed: 75,
+        });
+    </script>
+
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link')
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab')
+        }
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab')
+    }
+
+</script>
+
+<script>
+
+    var sidemenue = document.getElementById('sidemenue');
+    function openmenue(){
+        sidemenue.style.right='0';
+    }
+    function closemenue(){
+        sidemenue.style.right='-200px';
+    }
+
+
+</script>
+</body>
+
+</html>
